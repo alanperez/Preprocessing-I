@@ -1,1 +1,224 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  background-image: radial-gradient(circle farthest-corner at -4% -12.9%, #4a626e 0.3%, #1e2130 90.2%);
+}
+.container {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+.header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 20px;
+}
+.header nav a {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+.intro {
+  display: flex;
+  border: 1px solid black;
+  box-shadow: 5px 10px #27343a;
+  height: 50%;
+  width: 100%;
+}
+.intro .intro-box {
+  padding: 20px;
+  border: 1px solid red;
+  margin: 0 auto;
+}
+.intro .intro-box .intro-text-box {
+  margin: 45% 0;
+  padding: 10px;
+}
+.intro .intro-box .intro-text-box h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  letter-spacing: 2px;
+  margin: 10px 0;
+}
+.intro .intro-box .intro-text-box h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: black;
+  margin: 5px 0;
+}
+.intro .intro-box .intro-text-box-contact p {
+  font-size: 10px;
+  font-family: 'Lato', sans-serif;
+  color: black;
+}
+.intro .intro-box .wrapper .image--cover {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center right;
+}
+.intro .intro-box .wrapper #outer-circle {
+  background: #385a94;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  position: relative;
+  box-shadow: 0 0 0 50px black;
+}
+/*======ABOUT ME======*/
+.about {
+  width: 100%;
+}
+.about .about-box {
+  display: flex;
+}
+.about .about-info {
+  color: black;
+  margin: 10% 0;
+}
+.about .about-info h1 {
+  font-size: 2rem;
+}
+.about .about-img img {
+  margin: 10% 0;
+  height: 80%;
+  padding: 0 20%;
+}

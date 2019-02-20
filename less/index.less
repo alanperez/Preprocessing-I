@@ -54,6 +54,127 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	background-image: radial-gradient( circle farthest-corner at -4% -12.9%,  rgba(74,98,110,1) 0.3%, rgba(30,33,48,1) 90.2% );
+
+
 }
 
+
+.container {
+	width: 80%;
+	height: 100%;
+	// border: 1px solid red;
+	margin: 0 auto;
+    // background-color: #66ffff;
+}
+
+.header nav {
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 20px 20px;
+}
+
+.header nav a {
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+	color: black;
+	font-weight: 500;
+}
+
+.intro {
+	
+	display:flex;
+	border: 1px solid black;
+	box-shadow: 5px 10px rgb(39, 52, 58);
+	// width: 50%;
+	height: 50%;
+	width: 100%;
+}
+
+.intro .intro-box {
+	padding: 20px;
+	border: 1px solid red;
+	margin: 0 auto;
+}
+
+.intro .intro-box .intro-text-box{
+	margin: 45% 0;
+    padding: 10px;
+	h1 {
+		font-size: 2rem;
+		font-weight: 900;
+		font-family: 'Roboto', sans-serif;
+		color:black;
+		letter-spacing: 2px;
+		margin: 10px 0;
+	}
+	h3{
+		font-family: 'Roboto', sans-serif;
+		font-weight: 400;
+		font-size: 1rem;
+		color:black;
+		margin: 5px 0;
+		
+	}
+}
+	.intro .intro-box .intro-text-box-contact {
+		p {
+			font-size:10px;
+		font-family: 'Lato', sans-serif;
+		// font-size: 16px;
+		// font-weight: 100;
+		// font-size: 1rem;
+		color:black;
+		
+		}
+	}
+
+	.intro .intro-box .wrapper {
+			// padding: 100px;
+		  .image--cover {
+			width: 150px;
+			height: 150px;
+			border-radius: 50%;
+			// margin: 20px;
+		  
+			object-fit: cover;
+			object-position: center right;
+		  }
+
+		  #outer-circle {
+			background: #385a94;
+			border-radius: 50%;
+			height:200px;
+			width:200px;
+			position: relative;
+			box-shadow: 0 0 0 50px black;
+			// margin:100px;
+		}
+	}
+
+	/*======ABOUT ME======*/
+
+	.about {
+		width: 100%;
+		// border:1px solid red;
+		// display:flex;
+		.about-box {
+display: flex;
+		}
+		.about-info {
+			color: black;
+			margin: 10% 0;
+			h1{
+				font-size: 2rem;
+			}
+		}
+		.about-img {
+			img{
+				margin: 10% 0;
+				height: 80%;
+				padding: 0 20%;
+			}
+		}
+	}
