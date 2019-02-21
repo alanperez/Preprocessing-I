@@ -149,12 +149,19 @@ header nav {
   width: 50%;
   padding: 15px 0;
   transition: 0.3s;
-  transform: translate(-50%, -50%);
   display: flex;
   justify-content: space-between;
 }
+header nav a:nth-child(1):hover ~ .line {
+  transform: translate(0px);
+  transition: all 0.4s ease-in-out;
+  background-color: #004df3;
+}
+header nav a:nth-child(1):hover {
+  color: #004df3;
+}
 header nav a:nth-child(2):hover ~ .line {
-  transform: translate(125px);
+  transform: translate(0px);
   transition: all 0.4s ease-in-out;
   background-color: tomato;
 }
@@ -162,7 +169,7 @@ header nav a:nth-child(2):hover {
   color: tomato;
 }
 header nav a:nth-child(3):hover ~ .line {
-  transform: translate(250px);
+  transform: translate(0px);
   transition: all 0.4s ease-in-out;
   background-color: yellow;
 }
@@ -170,7 +177,7 @@ header nav a:nth-child(3):hover {
   color: yellow;
 }
 header nav a:nth-child(4):hover ~ .line {
-  transform: translate(375px);
+  transform: translate(0px);
   transition: all 0.4s ease-in-out;
   background-color: skyblue;
 }
@@ -178,7 +185,7 @@ header nav a:nth-child(4):hover {
   color: skyblue;
 }
 header nav a:nth-child(5):hover ~ .line {
-  transform: translate(475px);
+  transform: translate(0px);
   transition: all 0.4s ease-in-out;
   background-color: green;
 }
