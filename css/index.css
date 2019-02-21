@@ -1,1 +1,285 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.container {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+.header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 20px;
+}
+.header nav a {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+.intro {
+  display: flex;
+  border: 1px solid black;
+  box-shadow: 5px 10px #27343a;
+  height: 50%;
+  width: 100%;
+}
+.intro .intro-box {
+  padding: 20px;
+  margin: 0 auto;
+}
+.intro .intro-box .intro-text-box {
+  margin: 45% 0;
+  padding: 10px;
+}
+.intro .intro-box .intro-text-box h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  letter-spacing: 2px;
+  margin: 10px 0;
+}
+.intro .intro-box .intro-text-box h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: black;
+  margin: 5px 0;
+  font-weight: 700;
+}
+.intro .intro-box .intro-text-box-contact p {
+  font-family: 'Lato', sans-serif;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+}
+.intro .intro-box .wrapper .image--cover {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center right;
+  margin-top: 70px;
+  background: blue;
+  border: 1px solid blue;
+  box-shadow: 0 0 0 5px black;
+}
+/*======ABOUT ME======*/
+.about {
+  width: 100%;
+}
+.about .about-box {
+  display: flex;
+  justify-content: center;
+}
+.about .about-info {
+  color: black;
+  margin: 10% 0;
+}
+.about .about-info h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  padding: 20px 0;
+}
+.about .about-info p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+}
+.about .about-img img {
+  margin: 10% 0;
+  height: 80%;
+  padding: 0 20%;
+}
+.skills-section {
+  width: 100%;
+}
+.skills-section h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center;
+  margin: 40px 0;
+}
+.skills-section .skills-box-info {
+  display: flex;
+  justify-content: center;
+}
+.skills-section .skills-box-info-text ul {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 900;
+}
+.experience-section {
+  width: 100%;
+  margin: 20px 0;
+}
+.experience-section h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center;
+  margin: 40px 0;
+}
+.experience-section .experience-box-info {
+  display: flex;
+  justify-content: center;
+}
+.experience-section .experience-box-info #experiencesW {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+.experience-section .experience-box-info #experiencesW td,
+.experience-section .experience-box-info #experiencesW th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.experience-section .experience-box-info #experiencesW tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.experience-section .experience-box-info #experiencesW tr:hover {
+  background-color: #ddd;
+}
+.experience-section .experience-box-info #experiencesW th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #ddd;
+  color: black;
+}
