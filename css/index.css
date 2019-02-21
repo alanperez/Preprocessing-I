@@ -133,7 +133,6 @@ table {
 html,
 body {
   height: 100%;
-  background-image: radial-gradient(circle farthest-corner at -4% -12.9%, #4a626e 0.3%, #1e2130 90.2%);
 }
 .container {
   width: 80%;
@@ -161,7 +160,6 @@ body {
 }
 .intro .intro-box {
   padding: 20px;
-  border: 1px solid red;
   margin: 0 auto;
 }
 .intro .intro-box .intro-text-box {
@@ -182,26 +180,24 @@ body {
   font-size: 1rem;
   color: black;
   margin: 5px 0;
+  font-weight: 700;
 }
 .intro .intro-box .intro-text-box-contact p {
-  font-size: 10px;
   font-family: 'Lato', sans-serif;
   color: black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
 }
 .intro .intro-box .wrapper .image--cover {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
   object-position: center right;
-}
-.intro .intro-box .wrapper #outer-circle {
-  background: #385a94;
-  border-radius: 50%;
-  height: 200px;
-  width: 200px;
-  position: relative;
-  box-shadow: 0 0 0 50px black;
+  margin-top: 70px;
+  background: blue;
+  border: 1px solid blue;
+  box-shadow: 0 0 0 5px black;
 }
 /*======ABOUT ME======*/
 .about {
@@ -209,16 +205,81 @@ body {
 }
 .about .about-box {
   display: flex;
+  justify-content: center;
 }
 .about .about-info {
   color: black;
   margin: 10% 0;
 }
 .about .about-info h1 {
+  font-family: 'Roboto', sans-serif;
   font-size: 2rem;
+  font-weight: 900;
+  padding: 20px 0;
+}
+.about .about-info p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
 }
 .about .about-img img {
   margin: 10% 0;
   height: 80%;
   padding: 0 20%;
+}
+.skills-section {
+  width: 100%;
+}
+.skills-section h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center;
+  margin: 40px 0;
+}
+.skills-section .skills-box-info {
+  display: flex;
+  justify-content: center;
+}
+.skills-section .skills-box-info-text ul {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 900;
+}
+.experience-section {
+  width: 100%;
+  margin: 20px 0;
+}
+.experience-section h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center;
+  margin: 40px 0;
+}
+.experience-section .experience-box-info {
+  display: flex;
+  justify-content: center;
+}
+.experience-section .experience-box-info #experiencesW {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+.experience-section .experience-box-info #experiencesW td,
+.experience-section .experience-box-info #experiencesW th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.experience-section .experience-box-info #experiencesW tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.experience-section .experience-box-info #experiencesW tr:hover {
+  background-color: #ddd;
+}
+.experience-section .experience-box-info #experiencesW th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #ddd;
+  color: black;
 }

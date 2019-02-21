@@ -55,18 +55,35 @@ table {
 
 html, body {
 	height: 100%;
-	background-image: radial-gradient( circle farthest-corner at -4% -12.9%,  rgba(74,98,110,1) 0.3%, rgba(30,33,48,1) 90.2% );
-
+	// background-image: radial-gradient( circle farthest-corner at -4% -12.9%,  rgba(74,98,110,1) 0.3%, rgba(30,33,48,1) 90.2% );
+}
+body {
+// 	background: #485563;  /* fallback for old browsers */
+// background: -webkit-linear-gradient(to right, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6 */
+// background: linear-gradient(to right, #29323c, #485563); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
+// Mixin
+.headings(@style) {
+	h1{
+		@style();
+	}
+}
+
+// Variables
+@font-color: black;
+@background: #f7f7f7;
+@header-txt: white;
 
 .container {
+
 	width: 80%;
 	height: 100%;
 	// border: 1px solid red;
 	margin: 0 auto;
-    // background-color: #66ffff;
+	// background-color: #66ffff;
+	// background: @background;
 }
 
 .header nav {
@@ -79,7 +96,7 @@ html, body {
 .header nav a {
 	font-family: 'Roboto', sans-serif;
 	text-decoration: none;
-	color: black;
+	color: @font-color;
 	font-weight: 500;
 }
 
@@ -95,7 +112,7 @@ html, body {
 
 .intro .intro-box {
 	padding: 20px;
-	border: 1px solid red;
+	// border: 1px solid red;
 	margin: 0 auto;
 }
 
@@ -106,7 +123,7 @@ html, body {
 		font-size: 2rem;
 		font-weight: 900;
 		font-family: 'Roboto', sans-serif;
-		color:black;
+		color:@font-color;
 		letter-spacing: 2px;
 		margin: 10px 0;
 	}
@@ -114,44 +131,49 @@ html, body {
 		font-family: 'Roboto', sans-serif;
 		font-weight: 400;
 		font-size: 1rem;
-		color:black;
+		color:@font-color;
 		margin: 5px 0;
+		font-weight: 700;
 		
 	}
 }
 	.intro .intro-box .intro-text-box-contact {
 		p {
-			font-size:10px;
+			// font-size:10px;
 		font-family: 'Lato', sans-serif;
 		// font-size: 16px;
 		// font-weight: 100;
 		// font-size: 1rem;
-		color:black;
-		
+		color:@font-color;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 600;
 		}
 	}
 
 	.intro .intro-box .wrapper {
 			// padding: 100px;
 		  .image--cover {
-			width: 150px;
-			height: 150px;
-			border-radius: 50%;
-			// margin: 20px;
-		  
-			object-fit: cover;
-			object-position: center right;
+			width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center right;
+    margin-top: 70px;
+    background: blue;
+    border: 1px solid blue;
+    box-shadow: 0 0 0 5px black;
 		  }
 
-		  #outer-circle {
-			background: #385a94;
-			border-radius: 50%;
-			height:200px;
-			width:200px;
-			position: relative;
-			box-shadow: 0 0 0 50px black;
-			// margin:100px;
-		}
+		//   #outer-circle {
+		// 	background: #385a94;
+		// 	border-radius: 50%;
+		// 	height:200px;
+		// 	width:200px;
+		// 	// position: relative;
+		// 	box-shadow: 0 0 0 50px black;
+		// 	margin: -55px 0;
+		// 	// margin:100px;
+		// }
 	}
 
 	/*======ABOUT ME======*/
@@ -161,13 +183,23 @@ html, body {
 		// border:1px solid red;
 		// display:flex;
 		.about-box {
-display: flex;
+			display: flex;
+			justify-content: center;
 		}
 		.about-info {
-			color: black;
+			color: @font-color;
 			margin: 10% 0;
 			h1{
+				font-family: 'Roboto', sans-serif;
 				font-size: 2rem;
+				font-weight: 900;
+				padding: 20px 0;
+			}
+			
+			p{
+				font-family: 'Roboto', sans-serif;
+				font-weight: 600;
+				// line-height: 20px;
 			}
 		}
 		.about-img {
@@ -177,4 +209,74 @@ display: flex;
 				padding: 0 20%;
 			}
 		}
+	}
+
+	.skills-section {
+		width: 100%;
+
+		h1 {
+			font-family: 'Roboto', sans-serif;
+			font-size: 2rem;
+			font-weight: 900;
+			text-align: center;
+			margin: 40px 0;
+		}
+
+		.skills-box-info {
+			display: flex;
+			justify-content: center;
+			
+
+		}
+		.skills-box-info-text {
+			ul {
+				font-family: 'Roboto', sans-serif;
+				font-size: 1rem;
+				font-weight: 900;
+			}
+		}
+	}
+
+	.experience-section {
+		
+		width: 100%;
+		margin: 20px 0;
+		h1 {
+			font-family: 'Roboto', sans-serif;
+			font-size: 2rem;
+			font-weight: 900;
+			text-align: center;
+			margin: 40px 0;
+		}
+
+		.experience-box-info {
+			display: flex;
+			justify-content: center;
+			
+
+			#experiencesW {
+				font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+				border-collapse: collapse;
+				width: 100%;
+			  }
+			  
+			  #experiencesW td, #experiencesW th {
+				border: 1px solid #ddd;
+				padding: 8px;
+			  }
+			  
+			  #experiencesW tr:nth-child(even){background-color: #f2f2f2;}
+			  
+			  #experiencesW tr:hover {background-color: #ddd;}
+			  
+			  #experiencesW th {
+				padding-top: 12px;
+				padding-bottom: 12px;
+				text-align: left;
+				background-color: #ddd;
+				color: @font-color;
+			  }
+
+		}
+
 	}
