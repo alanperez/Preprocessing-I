@@ -17,119 +17,82 @@
 <body>
   <div class="container">
 
-    <section class="header">
+
+    <header style="visibility: visible;animation-name: fadeInUp";>
       <nav>
         <a href="#">Home</a>
-        <a href="#about-box">About</a>
+        <a href="#">About</a>
+        <a href="#">Skills</a>
         <a href="#">Portfolio</a>
-        <a href="#">Contact</a>
+        <a  href="Contact">Contact</a>
       </nav>
-    </section>
-    <section class="intro">
-      <div class="intro-box">
-        <div class="intro-text-box">
-          <h1>Alan Perez</h1>
-          <h3>Front-End Developer</h3>
-        </div>
-        <div class="intro-text-box-contact">
-          <p>
-              <i class="fas fa-map-marker-alt"> Mesquite, TX</i><br>
-          </p>
-          <p>
-              <i class="fas fa-phone"> 123-123-123</i><br>
-          </p>
-          <p>
-              <i class="fas fa-envelope"> joebob@gmail.com</i><br>
-          </p>
-        </div>
+    </header>
+
+    <section class="top-section">
+      <div class="top-title-box">
+        <h1>Alan Perez</h1>
+        <h2>Front End Developer</h2>
+
+        <div class="top-info-box">
+            <div class="top-info-box-contact">
+                <i class="fas fa-envelope"><a href="#">alanp9six@gmail.com</a></i><br>
+                <i class="fas fa-phone">214-321-1234</i><br>
+                <i class="fas fa-map-marker-alt">Mesquite, TX</i><br>
+            </div>
+            <div class="top-info-box-social">
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin"></i>
+            </div>
+          </div>
+
       </div>
-      <div class="intro-box">
-          <div class="wrapper">
-              <img src="https://i2.cdn.turner.com/cnnnext/dam/assets/140926165711-john-sutter-profile-image-large-169.jpg" alt="" class="image--cover" />
-              <div id="outer-circle">
-                  <div id="inner-circle">
-                      <span id="inside-content"></span>
-                  </div>
-              </div>  
+
+      <div class="top-img">
+          <div id="outer-circle">
+            <img src="img/undraw_profile_pic_ic5t.svg">
             </div>
       </div>
     </section>
-    <section class="about">
-      <div class="about-box">
-        <div class="about-img">
-          <img src="https://cdn.pixabay.com/photo/2016/06/15/16/16/man-1459246_960_720.png">
+
+    <section class="about-section">
+      <div class="about-info-box">
+        <div class="about-info-box-img">
+          <img src="/img/undraw_about_me_wa29.svg">
         </div>
-        <div class="about-info">
-          <h1>About Me</h1>
-          <p>Hello, I'm Alan Perez, web-developer based in <br>Texas. I have experience in website design & building and customization. Also I am good at</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="skills-section">
-
-      <div class="skills-box">
-          <h1>Technical Skills</h1>
-        <div class="skills-box-info">
-
-        
-
-          <div class="skills-box-info-text">
-            <ul>
-              <li>C++</li>
-              <li>Java</li>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>LESS</li>
-            </ul>
-
+        <div class="about-info-box-text">
+            <h2>About Me</h2>
+            <p>Hello, I'm Alan, web-developer based in Texas. I have experience in website design & building and customization. I'm also good at</p>
+            <div class="about-info-box-text-skills">
+                <ul>
+                    <li><span>c++</span></li>
+                    <li><span>html</span></li>
+                    <li><span>css</span></li>
+                    <li><span>java</span></li>
+                    <li><span>less preprocessor</span></li>
+                    <!-- <li><span>React</span></li> -->
+                    <!-- <li><span>Javascript</span></li> -->
+                </ul>
+            </div>
           </div>
-
-        </div>
-
       </div>
+      
+    </section>
 
-
+    <section class="what-i-do">
+      <div class="wid-title">
+        <h2>What I do</h2>
+      </div>
+      <div class="wid-content-box">
+        <div class="wid-content">
+            <i class="fa fa-code iron-color"></i>
+            <h3>Web Development</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, dolorum?</p>
+        </div>
+      </div>
     </section>
 
 
-
-    <section class="experience-section">
-
-      <div class="experience-box">
-          <h1>Work Experience</h1>
-        <div class="experience-box-info">
-          <table id="experiencesW">
-  <tr>
-    <th>Years</th>
-    <th>Company</th>
-    <th>Title</th>
-    <th>Tech Used</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>Apple</td>
-    <td>Software Engineer</td>
-    <td>Swift</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>Apple</td>
-    <td>Software Engineer</td>
-    <td>Swift</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>Apple</td>
-    <td>Software Engineer</td>
-    <td>Swift</td>
-  </tr>
-</table>
-        </div>
-      </div>
-
-
-    </section>
   </div>
 </body>
 </html>

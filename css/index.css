@@ -133,153 +133,186 @@ table {
 html,
 body {
   height: 100%;
+  background-color: #100e17;
 }
 .container {
-  width: 80%;
-  height: 100%;
-  margin: 0 auto;
-}
-.header nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 20px 20px;
-}
-.header nav a {
+  max-width: 1140px;
+  margin: auto;
   font-family: 'Roboto', sans-serif;
-  text-decoration: none;
-  color: black;
+}
+header {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+header nav {
+  width: 50%;
+  padding: 15px 0;
+  transition: 0.3s;
+  display: flex;
+  justify-content: space-between;
+}
+header nav a {
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
+  color: white;
+  text-decoration: none;
 }
-.intro {
+/*=================== TOP SECTION ===================*/
+.top-section {
+  padding-top: 100px;
   display: flex;
-  border: 1px solid black;
-  box-shadow: 5px 10px #27343a;
-  height: 50%;
-  width: 100%;
+  justify-content: space-between;
+  margin: 15% 0;
 }
-.intro .intro-box {
-  padding: 20px;
-  margin: 0 auto;
-}
-.intro .intro-box .intro-text-box {
-  margin: 45% 0;
-  padding: 10px;
-}
-.intro .intro-box .intro-text-box h1 {
-  font-size: 2rem;
-  font-weight: 900;
+.top-section .top-title-box h1 {
+  font-size: 3rem;
   font-family: 'Roboto', sans-serif;
-  color: black;
-  letter-spacing: 2px;
+  font-weight: 900;
+  color: white;
+}
+.top-section .top-title-box h2 {
+  font-size: 1.625rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  line-height: 34px;
+  margin-bottom: 30px;
+  color: white;
+  margin: 30px 0;
+  line-height: 65px;
+}
+.top-section .top-info-box {
+  margin: 30px 0;
+  color: white;
+}
+.top-section .top-info-box .top-info-box-contact {
+  font-size: 0.925rem;
+  font-family: 'Roboto', sans-serif;
+  color: #ddd;
+}
+.top-section .top-info-box .top-info-box-contact .fas {
   margin: 10px 0;
 }
-.intro .intro-box .intro-text-box h3 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-  color: black;
-  margin: 5px 0;
-  font-weight: 700;
+.top-section .top-info-box .top-info-box-contact .fas a {
+  text-decoration: none;
+  color: white;
 }
-.intro .intro-box .intro-text-box-contact p {
-  font-family: 'Lato', sans-serif;
-  color: black;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 600;
+.top-section .top-info-box .top-info-box-contact .fas a:hover {
+  text-decoration: none;
+  color: #4286f4;
 }
-.intro .intro-box .wrapper .image--cover {
-  width: 200px;
-  height: 200px;
+.top-section .top-info-box .top-info-box-social {
+  margin: 0 1%;
+}
+.top-section .top-img #outer-circle {
+  background: radial-gradient(circle farthest-corner at -4% -12.9%, #4a626e 0.3%, #1e2130 90.2%);
   border-radius: 50%;
-  object-fit: cover;
-  object-position: center right;
-  margin-top: 70px;
-  background: blue;
-  border: 1px solid blue;
-  box-shadow: 0 0 0 5px black;
+  height: 360px;
+  width: 360px;
+  position: relative;
+  box-shadow: 0 0 0 10px #000000;
 }
-/*======ABOUT ME======*/
-.about {
-  width: 100%;
+.top-section .top-img img {
+  height: 360px;
+  width: 360px;
 }
-.about .about-box {
+/*=================== ABOUT SECTION ===================*/
+.about-section {
+  padding-top: 100px;
+  margin: 15% 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
-.about .about-info {
-  color: black;
-  margin: 10% 0;
+.about-section .about-info-box {
+  display: flex;
+  justify-content: space-between;
 }
-.about .about-info h1 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 2rem;
-  font-weight: 900;
-  padding: 20px 0;
+.about-section .about-info-box .about-info-box-img img {
+  max-width: 80%;
+  height: auto;
 }
-.about .about-info p {
+.about-section .about-info-box .about-info-box-text {
+  width: 600px;
+}
+.about-section .about-info-box .about-info-box-text h2 {
+  font-size: 1.625rem;
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
+  line-height: 34px;
+  margin-bottom: 30px;
+  color: white;
 }
-.about .about-img img {
-  margin: 10% 0;
-  height: 80%;
-  padding: 0 20%;
-}
-.skills-section {
-  width: 100%;
-}
-.skills-section h1 {
+.about-section .about-info-box .about-info-box-text p {
+  font-size: 0.925rem;
   font-family: 'Roboto', sans-serif;
-  font-size: 2rem;
-  font-weight: 900;
-  text-align: center;
-  margin: 40px 0;
+  color: #ddd;
+  line-height: 1.5;
+  color: white;
+  opacity: 0.9;
 }
-.skills-section .skills-box-info {
+.about-section .about-info-box .about-info-box-text .about-info-box-text-skills {
+  margin: 30px 0;
+}
+.about-section .about-info-box .about-info-box-text .about-info-box-text-skills ul {
+  margin: 0;
+  padding: 0;
+}
+.about-section .about-info-box .about-info-box-text .about-info-box-text-skills ul li {
+  margin: 0px 6px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 4px 0px;
+  display: inline-block;
+  color: #ddd;
+}
+.about-section .about-info-box .about-info-box-text .about-info-box-text-skills ul li span {
+  border: 1px solid #0bceaf;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+/*=================== WHAT I DO CONTENT ===================*/
+.what-i-do {
+  padding: 100px 0;
+}
+.what-i-do .wid-title h2 {
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 2rem;
+  line-height: 1.2;
+  font-family: "roboto", sans-serif;
+  font-weight: bold;
+  color: #ddd;
+}
+.what-i-do .wid-content-box {
+  box-shadow: -1rem 0 3rem #000;
   display: flex;
   justify-content: center;
+  width: 350px;
+  height: 250px;
 }
-.skills-section .skills-box-info-text ul {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1rem;
-  font-weight: 900;
-}
-.experience-section {
-  width: 100%;
-  margin: 20px 0;
-}
-.experience-section h1 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 2rem;
-  font-weight: 900;
+.what-i-do .wid-content-box .wid-content {
+  background-color: #202026;
+  padding: 20px;
   text-align: center;
-  margin: 40px 0;
 }
-.experience-section .experience-box-info {
-  display: flex;
-  justify-content: center;
+.what-i-do .wid-content-box .wid-content .fa {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 16px;
 }
-.experience-section .experience-box-info #experiencesW {
-  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
+.what-i-do .wid-content-box .wid-content .fa.iron-color {
+  color: #ed7256;
 }
-.experience-section .experience-box-info #experiencesW td,
-.experience-section .experience-box-info #experiencesW th {
-  border: 1px solid #ddd;
-  padding: 8px;
+.what-i-do .wid-content-box .wid-content h3 {
+  font-family: "roboto", sans-serif;
+  margin-bottom: 18px;
+  font-size: 25px;
+  line-height: 34px;
+  font-weight: bold;
+  color: #ddd;
 }
-.experience-section .experience-box-info #experiencesW tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-.experience-section .experience-box-info #experiencesW tr:hover {
-  background-color: #ddd;
-}
-.experience-section .experience-box-info #experiencesW th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #ddd;
-  color: black;
+.what-i-do .wid-content-box .wid-content p {
+  font-size: 0.925rem;
+  font-family: 'Roboto', sans-serif;
+  color: #ddd;
 }
