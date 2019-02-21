@@ -289,6 +289,7 @@ header nav a {
   justify-content: center;
   width: 350px;
   height: 250px;
+  margin: 0 auto;
 }
 .what-i-do .wid-content-box .wid-content {
   background-color: #202026;
