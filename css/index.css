@@ -149,14 +149,53 @@ header nav {
   width: 50%;
   padding: 15px 0;
   transition: 0.3s;
+  transform: translate(-50%, -50%);
   display: flex;
   justify-content: space-between;
+}
+header nav a:nth-child(2):hover ~ .line {
+  transform: translate(125px);
+  transition: all 0.4s ease-in-out;
+  background-color: tomato;
+}
+header nav a:nth-child(2):hover {
+  color: tomato;
+}
+header nav a:nth-child(3):hover ~ .line {
+  transform: translate(250px);
+  transition: all 0.4s ease-in-out;
+  background-color: yellow;
+}
+header nav a:nth-child(3):hover {
+  color: yellow;
+}
+header nav a:nth-child(4):hover ~ .line {
+  transform: translate(375px);
+  transition: all 0.4s ease-in-out;
+  background-color: skyblue;
+}
+header nav a:nth-child(4):hover {
+  color: skyblue;
+}
+header nav a:nth-child(5):hover ~ .line {
+  transform: translate(475px);
+  transition: all 0.4s ease-in-out;
+  background-color: green;
+}
+header nav a:nth-child(5):hover {
+  color: green;
 }
 header nav a {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   color: white;
   text-decoration: none;
+  font-weight: bold;
+}
+header nav .line {
+  width: 60px;
+  height: 3px;
+  background-color: #fff;
 }
 /*=================== TOP SECTION ===================*/
 .top-section {
@@ -186,12 +225,16 @@ header nav a {
   color: white;
 }
 .top-section .top-info-box .top-info-box-contact {
+  margin-bottom: 20px;
   font-size: 0.925rem;
   font-family: 'Roboto', sans-serif;
   color: #ddd;
 }
 .top-section .top-info-box .top-info-box-contact ul li {
   margin: 10px 0;
+}
+.top-section .top-info-box .top-info-box-contact ul li :hover {
+  color: #0bceaf;
 }
 .top-section .top-info-box .top-info-box-contact ul li .fas {
   margin-right: 15px;
@@ -204,14 +247,11 @@ header nav a {
 .top-section .top-info-box .top-info-box-contact ul li address {
   display: inline-block;
 }
-.top-section .top-info-box .top-info-box-social {
-  display: inline-block;
-}
 .top-section .top-info-box .top-info-box-social ul li {
-  list-style-type: none;
   margin: 10px 0;
 }
 .top-section .top-info-box .top-info-box-social ul li a {
+  color: #fff;
   font-size: 25px;
   text-align: center;
   width: 30px;
@@ -219,9 +259,21 @@ header nav a {
   padding: 0;
   margin-right: 0;
   border-radius: 50%;
+  transition: 0.5s;
 }
 .top-section .top-info-box .top-info-box-social ul li a .fab {
-  display: inline-block;
+  margin-top: 10px;
+  color: #ddd;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 4px 14px;
+  margin-right: 10px;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 3px;
+  float: left;
 }
 .top-section .top-img #outer-circle {
   background: radial-gradient(circle farthest-corner at -4% -12.9%, #4a626e 0.3%, #1e2130 90.2%);
