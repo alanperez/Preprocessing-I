@@ -190,19 +190,38 @@ header nav a {
   font-family: 'Roboto', sans-serif;
   color: #ddd;
 }
-.top-section .top-info-box .top-info-box-contact .fas {
+.top-section .top-info-box .top-info-box-contact ul li {
   margin: 10px 0;
 }
-.top-section .top-info-box .top-info-box-contact .fas a {
-  text-decoration: none;
-  color: white;
+.top-section .top-info-box .top-info-box-contact ul li .fas {
+  margin-right: 15px;
+  display: inline-block;
 }
-.top-section .top-info-box .top-info-box-contact .fas a:hover {
-  text-decoration: none;
-  color: #4286f4;
+.top-section .top-info-box .top-info-box-contact ul li a {
+  text-decoration: none !important;
+  color: #ddd;
+}
+.top-section .top-info-box .top-info-box-contact ul li address {
+  display: inline-block;
 }
 .top-section .top-info-box .top-info-box-social {
-  margin: 0 1%;
+  display: inline-block;
+}
+.top-section .top-info-box .top-info-box-social ul li {
+  list-style-type: none;
+  margin: 10px 0;
+}
+.top-section .top-info-box .top-info-box-social ul li a {
+  font-size: 25px;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  margin-right: 0;
+  border-radius: 50%;
+}
+.top-section .top-info-box .top-info-box-social ul li a .fab {
+  display: inline-block;
 }
 .top-section .top-img #outer-circle {
   background: radial-gradient(circle farthest-corner at -4% -12.9%, #4a626e 0.3%, #1e2130 90.2%);
@@ -210,7 +229,7 @@ header nav a {
   height: 360px;
   width: 360px;
   position: relative;
-  box-shadow: 0 0 0 10px #000000;
+  box-shadow: 0 0 0 10px #3f51b5;
 }
 .top-section .top-img img {
   height: 360px;
