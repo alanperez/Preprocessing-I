@@ -56,227 +56,252 @@ table {
 html, body {
 	height: 100%;
 	// background-image: radial-gradient( circle farthest-corner at -4% -12.9%,  rgba(74,98,110,1) 0.3%, rgba(30,33,48,1) 90.2% );
-}
-body {
-// 	background: #485563;  /* fallback for old browsers */
-// background: -webkit-linear-gradient(to right, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6 */
-// background: linear-gradient(to right, #29323c, #485563); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+	background-color: @bgc;
 }
 
-// Mixin
-.headings(@style) {
-	h1{
-		@style();
-	}
+
+// MIXIN
+.nav(){
+	display: flex;
+    justify-content: space-between;
+}
+.flex(){
+	display:flex;
+	justify-content:center;
 }
 
-// Variables
-@font-color: black;
+.flexsb(){
+	display:flex;
+	justify-content: space-between;
+}
+.navheading(){
+	font-family: 'Roboto', sans-serif;
+	font-weight:500;
+}
+.ptext() {
+	font-size:.925rem;
+	font-family: 'Roboto', sans-serif;
+	color:@font-color;
+}
+.heading(){
+	font-size:3rem;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
+}
+
+.heading2(){
+	font-size:1.625rem;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 600;
+    line-height: 34px;
+    margin-bottom: 30px;
+}
+
+.marginTBperc(){
+	margin: 15% 0;
+}
+
+.marginTB(){
+	margin: 30px 0;
+}
+// VARIABLES
+@bgc: #100e17;
+@font: 'Roboto', sans-serif;
+@font-color: #ddd;
 @background: #f7f7f7;
 @header-txt: white;
+@gradientBG: radial-gradient( circle farthest-corner at -4% -12.9%,  rgba(74,98,110,1) 0.3%, rgba(30,33,48,1) 90.2% );
+@hovercolor: #4286f4;
+@boxbg: #202026;
+
 
 .container {
-
-	width: 80%;
-	height: 100%;
-	// border: 1px solid red;
-	margin: 0 auto;
-	// background-color: #66ffff;
-	// background: @background;
-}
-
-.header nav {
-	display:flex;
-	justify-content: space-around;
-	align-items: center;
-	margin: 20px 20px;
-}
-
-.header nav a {
-	font-family: 'Roboto', sans-serif;
-	text-decoration: none;
-	color: @font-color;
-	font-weight: 500;
-}
-
-.intro {
+	max-width: 1140px;
+	margin: auto;
+	font-family: @font;
+	// border:1px solid red;
 	
-	display:flex;
-	border: 1px solid black;
-	box-shadow: 5px 10px rgb(39, 52, 58);
-	// width: 50%;
-	height: 50%;
-	width: 100%;
 }
-
-.intro .intro-box {
-	padding: 20px;
-	// border: 1px solid red;
-	margin: 0 auto;
-}
-
-.intro .intro-box .intro-text-box{
-	margin: 45% 0;
-    padding: 10px;
-	h1 {
-		font-size: 2rem;
-		font-weight: 900;
-		font-family: 'Roboto', sans-serif;
-		color:@font-color;
-		letter-spacing: 2px;
-		margin: 10px 0;
-	}
-	h3{
-		font-family: 'Roboto', sans-serif;
-		font-weight: 400;
-		font-size: 1rem;
-		color:@font-color;
-		margin: 5px 0;
-		font-weight: 700;
-		
-	}
-}
-	.intro .intro-box .intro-text-box-contact {
-		p {
-			// font-size:10px;
-		font-family: 'Lato', sans-serif;
-		// font-size: 16px;
-		// font-weight: 100;
-		// font-size: 1rem;
-		color:@font-color;
-		font-family: 'Roboto', sans-serif;
-		font-weight: 600;
+header {
+	.marginTB();
+	.flex();
+	nav{
+		width: 50%;
+		padding: 15px 0;
+		transition: 0.3s;
+		.nav();
+		a {
+			.navheading();
+			color:@header-txt;
+			text-decoration: none;
 		}
 	}
+}
 
-	.intro .intro-box .wrapper {
-			// padding: 100px;
-		  .image--cover {
-			width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: center right;
-    margin-top: 70px;
-    background: blue;
-    border: 1px solid blue;
-    box-shadow: 0 0 0 5px black;
-		  }
 
-		//   #outer-circle {
-		// 	background: #385a94;
-		// 	border-radius: 50%;
-		// 	height:200px;
-		// 	width:200px;
-		// 	// position: relative;
-		// 	box-shadow: 0 0 0 50px black;
-		// 	margin: -55px 0;
-		// 	// margin:100px;
-		// }
-	}
+/*=================== TOP SECTION ===================*/
 
-	/*======ABOUT ME======*/
-
-	.about {
-		width: 100%;
-		// border:1px solid red;
-		// display:flex;
-		.about-box {
-			display: flex;
-			justify-content: center;
+.top-section {
+	padding-top: 100px;
+	.flexsb();
+	.marginTBperc();
+	// .flex();
+	.top-title-box {
+		h1 {
+			.heading();
+		color: @header-txt;
 		}
-		.about-info {
-			color: @font-color;
-			margin: 10% 0;
-			h1{
-				font-family: 'Roboto', sans-serif;
-				font-size: 2rem;
-				font-weight: 900;
-				padding: 20px 0;
+		h2 {
+			.heading2();
+			color: @header-txt;
+			.marginTB();
+			line-height: 65px;
+			// margin-top: 10px;
+			// margin-bottom: 10px;
+		}
+	}
+	.top-info-box {
+		.marginTB();
+		color: @header-txt;
+
+		.top-info-box-contact {
+			.ptext();
+			.fas {
+				margin: 10px 0;
+					
+					a{
+						text-decoration: none;
+						color:white;
+						&:hover {
+							text-decoration: none; color:@hovercolor;
+						}
+					}
 			}
-			
+		}
+
+		.top-info-box-social {
+			margin: 0 1%;
+		}
+	}
+	.top-img {
+
+		#outer-circle {
+			background: @gradientBG;
+			border-radius: 50%;
+			height:360px;
+			width: 360px;
+			position: relative;
+			box-shadow: 0 0 0 10px rgb(0, 0, 0);
+			// margin:100px;
+		}
+		img {
+			height:360px;
+			width:360px;
+		
+		}
+	}
+
+}
+
+/*=================== ABOUT SECTION ===================*/
+.about-section {
+	padding-top: 100px;
+	.marginTBperc();
+	.flexsb();
+	.about-info-box {
+		.flexsb();
+		.about-info-box-img {
+			img {
+				max-width: 80%;
+    			height: auto;
+			}
+		}
+
+		.about-info-box-text {
+			width: 600px;
+			h2 {
+				.heading2();
+				color:white;
+			}
+			p {
+				.ptext();
+				line-height: 1.5;
+				color:white;
+				opacity: 0.9;
+				// margin: 70px 0;
+			}
+			.about-info-box-text-skills {
+				.marginTB();
+				ul {
+					margin: 0;
+    				padding: 0;
+					li {
+						margin: 0px 6px;
+						border-radius: 4px;
+						margin-bottom: 10px;
+						padding: 4px 0px;
+						display: inline-block;
+						color:@font-color;
+						span {
+							border: 1px solid #0bceaf;
+							padding: 4px 10px;
+							border-radius: 4px;
+						}
+						
+					}
+				}
+			}
+		}
+	}
+	
+}
+
+
+/*=================== WHAT I DO CONTENT ===================*/
+
+.what-i-do {
+	padding: 100px 0;
+	
+	.wid-title {
+		h2 {
+			text-align: center;
+			margin-bottom: 60px;
+			font-size: 2rem;
+			line-height: 1.2;
+			font-family: "roboto", sans-serif;
+			font-weight: bold;
+			color:@font-color
+		}
+	}
+	.wid-content-box {
+		
+		box-shadow: -1rem 0 3rem #000;
+		.flex();
+		width: 350px;
+		height: 250px;
+		.wid-content {
+			background-color: @boxbg;
+			padding: 20px;
+			text-align: center;
+			.fa{
+				font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 16px;
+			}
+			.fa.iron-color {
+				color: #ed7256;
+			}
+			h3 {
+				font-family: "roboto", sans-serif;
+				margin-bottom: 18px;
+				font-size: 25px;
+				line-height: 34px;
+				font-weight: bold;
+				color:@font-color;
+			}
 			p{
-				font-family: 'Roboto', sans-serif;
-				font-weight: 600;
-				// line-height: 20px;
-			}
-		}
-		.about-img {
-			img{
-				margin: 10% 0;
-				height: 80%;
-				padding: 0 20%;
+				.ptext();
 			}
 		}
 	}
-
-	.skills-section {
-		width: 100%;
-
-		h1 {
-			font-family: 'Roboto', sans-serif;
-			font-size: 2rem;
-			font-weight: 900;
-			text-align: center;
-			margin: 40px 0;
-		}
-
-		.skills-box-info {
-			display: flex;
-			justify-content: center;
-			
-
-		}
-		.skills-box-info-text {
-			ul {
-				font-family: 'Roboto', sans-serif;
-				font-size: 1rem;
-				font-weight: 900;
-			}
-		}
-	}
-
-	.experience-section {
-		
-		width: 100%;
-		margin: 20px 0;
-		h1 {
-			font-family: 'Roboto', sans-serif;
-			font-size: 2rem;
-			font-weight: 900;
-			text-align: center;
-			margin: 40px 0;
-		}
-
-		.experience-box-info {
-			display: flex;
-			justify-content: center;
-			
-
-			#experiencesW {
-				font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-				border-collapse: collapse;
-				width: 100%;
-			  }
-			  
-			  #experiencesW td, #experiencesW th {
-				border: 1px solid #ddd;
-				padding: 8px;
-			  }
-			  
-			  #experiencesW tr:nth-child(even){background-color: #f2f2f2;}
-			  
-			  #experiencesW tr:hover {background-color: #ddd;}
-			  
-			  #experiencesW th {
-				padding-top: 12px;
-				padding-bottom: 12px;
-				text-align: left;
-				background-color: #ddd;
-				color: @font-color;
-			  }
-
-		}
-
-	}
+}
